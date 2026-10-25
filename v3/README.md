@@ -35,3 +35,5 @@ Do not claim a feature is complete unless it is implemented and tested. The CI w
 
 
 Version 3.1 adds an eight-minute arrangement timeline, importable audio clips, independent tracks for beat/melody/hook, clip movement, clip stretching, project save/open, and WAV mixdown. Stretching uses resampling and changes pitch; pitch-preserving time-stretch is not included.
+
+Build target: `Niclusive-Music-Studio-3.1-Portable-3.1.0.exe` (Windows x64 portable executable).
