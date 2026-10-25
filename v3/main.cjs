@@ -27,7 +27,7 @@ function createWindow() {
     minWidth: 1080,
     minHeight: 700,
     backgroundColor: "#101317",
-    title: "Niclusive Music Studio 3.0",
+    title: "Niclusive Music Studio 3.1",
     webPreferences: {
       preload: path.join(__dirname, "preload.cjs"),
       contextIsolation: true,
