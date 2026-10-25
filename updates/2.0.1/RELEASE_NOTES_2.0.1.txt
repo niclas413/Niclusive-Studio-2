@@ -1,0 +1,18 @@
+NICLUSIVE MUSIC STUDIO 2.0.1 — PORTABLE UPDATE
+================================================
+
+Änderungen
+- Songdauer wird anhand von BPM und Anzahl der 4/4-Takte angezeigt.
+- Arrangement bleibt für bis zu 512 Takte nutzbar; der Step-Sequencer bleibt ein 16-Schritt-/Ein-Takt-Pattern, das pro Takt im Arrangement ausgewählt werden kann.
+- Änderungen am Grundton transponieren vorhandene Melodie- und Bassnoten hörbar. Änderungen an der Tonleiter passen vorhandene Noten an die Skala an.
+- Notenfelder zeigen Tonname, MIDI-Nummer, Tonleiterstatus und Notenparameter per Tooltip.
+- Weitere Bedienelemente erhalten beschreibende Tooltips.
+- Transportleiste ist nicht mehr sticky und scrollt mit dem Arbeitsbereich; horizontale Timeline-Navigation bleibt erhalten.
+- Piano, E-Piano, Gitarre, Nylon-Gitarre, Violine und Cello erhalten eigenständige prozedurale Klangmodelle. Diese sind synthetisierte Näherungen, keine echten Instrumentenaufnahmen.
+- Vorhandene Mikrofonaufnahmefunktion bleibt erhalten.
+- Sample-Manifest wird als valides JSON ausgeliefert.
+
+Prüfstatus
+- JavaScript-Syntax und JSON-Manifest werden automatisiert geprüft.
+- ZIP- und ASAR-Strukturen werden auf Integrität geprüft.
+- Kein echter Windows-11-Runtime-Test und kein Audio-/Mikrofontest in dieser Build-Umgebung durchgeführt.
