@@ -1,6 +1,6 @@
-# Niclusive Music Studio 3.0 — development foundation
+# Niclusive Music Studio 3.1 — development foundation
 
-This is the first executable foundation for the 3.0 rewrite, not a claim that the complete professional DAW specification is finished.
+This is the first executable foundation for the 3.1 rewrite, not a claim that the complete professional DAW specification is finished.
 
 ## Implemented in this foundation
 - Windows desktop shell using Electron with context isolation and Node integration disabled in the renderer.
@@ -28,7 +28,10 @@ npm run dist:win
 ```
 The Windows portable executable is written to `dist/`.
 
-Alternatively, open the GitHub Actions tab and run **Build Niclusive Music Studio 3.0 Portable** on branch `music-studio-3-foundation`. Download the generated artifact from the workflow run.
+Alternatively, open the GitHub Actions tab and run **Build Niclusive Music Studio 3.1 Portable** on branch `music-studio-3-foundation`. Download the generated artifact from the workflow run.
 
 ## Quality rule
 Do not claim a feature is complete unless it is implemented and tested. The CI workflow confirms packaging only; it does not prove audio behavior on the user's Windows machine.
+
+
+Version 3.1 adds an eight-minute arrangement timeline, importable audio clips, independent tracks for beat/melody/hook, clip movement, clip stretching, project save/open, and WAV mixdown. Stretching uses resampling and changes pitch; pitch-preserving time-stretch is not included.
