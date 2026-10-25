@@ -1,0 +1,42 @@
+{
+  "name": "niclusive-music-studio",
+  "version": "3.0.0",
+  "description": "Niclusive Music Studio 3.0 - portable Windows music production foundation",
+  "main": "main.cjs",
+  "author": "Niclas Wengenroth / Niclusive",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^38.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.niclusive.musicstudio",
+    "productName": "Niclusive Music Studio 3.0",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "renderer/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "portable": {
+      "artifactName": "Niclusive-Music-Studio-3.0-Portable-${version}.${ext}"
+    }
+  }
+}
