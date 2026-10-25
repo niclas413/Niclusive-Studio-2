@@ -1,4 +1,4 @@
-name: Build Niclusive Music Studio 3.0 Portable
+name: Build Niclusive Music Studio 3.1 Portable
 on:
   workflow_dispatch:
   push:
@@ -30,7 +30,7 @@ jobs:
       - name: Upload portable package
         uses: actions/upload-artifact@v4
         with:
-          name: Niclusive-Music-Studio-3.0-Portable
+          name: Niclusive-Music-Studio-3.1-Portable
           path: v3/dist/*.exe
           if-no-files-found: error
           retention-days: 30
