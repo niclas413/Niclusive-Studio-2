@@ -1,0 +1,36 @@
+name: Build Niclusive Music Studio 3.0 Portable
+on:
+  workflow_dispatch:
+  push:
+    branches: [music-studio-3-foundation]
+    paths:
+      - "v3/**"
+      - ".github/workflows/build-music-studio-v3.yml"
+permissions:
+  contents: read
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: v3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: v3/package.json
+      - name: Install dependencies
+        run: npm install
+      - name: Build portable x64 executable
+        run: npm run dist:win
+      - name: Upload portable package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Niclusive-Music-Studio-3.0-Portable
+          path: v3/dist/*.exe
+          if-no-files-found: error
+          retention-days: 30
