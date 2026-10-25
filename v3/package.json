@@ -1,7 +1,7 @@
 {
   "name": "niclusive-music-studio",
-  "version": "3.0.0",
-  "description": "Niclusive Music Studio 3.0 - portable Windows music production foundation",
+  "version": "3.1.0",
+  "description": "Niclusive Music Studio 3.1 - portable multitrack arrangement workstation",
   "main": "main.cjs",
   "author": "Niclas Wengenroth / Niclusive",
   "license": "UNLICENSED",
