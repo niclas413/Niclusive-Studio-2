@@ -1,0 +1,5 @@
+Niclusive Music Studio 2.0.1 — Artefakt-Info
+Portable ZIP: Niclusive_Music_Studio_2_Portable_2.0.1.zip
+Größe: 149424970 Bytes (ca. 142.5 MiB)
+SHA-256 (zuletzt dokumentierter Wert): e00f6f3d11a94d471b9b6d46f8290a7ca36ed8df4afe6c8642b49066e9e842ec
+Hinweis: Diese ZIP-Datei wurde noch nicht als GitHub-Release-Asset in diesem Repository abgelegt.
